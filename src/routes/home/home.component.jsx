@@ -22,13 +22,13 @@ const Home = () => {
             <a href={ProjectData.socials.github} target="_blank">
               <img
                 id="github"
-                src={`${process.env.PUBLIC_URL}/github-mark.svg`}
+                src={`${import.meta.env.BASE_URL}/github-mark.svg`}
               ></img>
             </a>
             <a href={ProjectData.socials.linkedin} target="_blank">
               <img
                 id="linkedin"
-                src={`${process.env.PUBLIC_URL}/LI-In-Bug.png`}
+                src={`${import.meta.env.BASE_URL}/LI-In-Bug.png`}
               ></img>
             </a>
           </div>
