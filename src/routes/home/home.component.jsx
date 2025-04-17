@@ -3,11 +3,12 @@ import ProjectData from "../../data/project-data";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const baseurl = import.meta.env.BASE_URL;
   return (
     <div className="home">
       <div className="introduction">
         <img
-          src="src/assets/profile.png"
+          src={ProjectData.profile_pic}
           id="profile-pic"
           alt="profile-pic"
         ></img>
@@ -20,16 +21,10 @@ const Home = () => {
           </div>
           <div className="socials">
             <a href={ProjectData.socials.github} target="_blank">
-              <img
-                id="github"
-                src={`${import.meta.env.BASE_URL}/github-mark.svg`}
-              ></img>
+              <img id="github" src={`${baseurl}/github-mark.svg`}></img>
             </a>
             <a href={ProjectData.socials.linkedin} target="_blank">
-              <img
-                id="linkedin"
-                src={`${import.meta.env.BASE_URL}/LI-In-Bug.png`}
-              ></img>
+              <img id="linkedin" src={`${baseurl}/LI-In-Bug.png`}></img>
             </a>
           </div>
         </div>

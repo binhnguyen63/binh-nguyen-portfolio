@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./navigation-top-bar.style.css";
 import { Link } from "react-router-dom";
+import ProjectData from "../../data/project-data";
 
 const NavigationTopBar = () => {
   const openResume = () => {
-    window.open("public/binh_nguyen_resume.pdf", "_blank");
+    window.open(ProjectData.resume, "_blank");
   };
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">

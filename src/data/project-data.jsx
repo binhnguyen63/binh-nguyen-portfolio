@@ -1,16 +1,18 @@
+const baseurl = import.meta.env.BASE_URL;
 const ProjectData = {
   title: "Binh Nguyen Portfolio Website",
   description: [
     `My name is Binh Nguyen, I’m passionate about building tech solutions that make life easier. I enjoy working on real-world projects—from full-stack web apps to automation tools—and love learning new technologies.`,
     `I’ve worked with Python, JavaScript, React, Node.js, PostgreSQL, and more, including projects like a user management site using Microsoft Graph API, restaurant management using PostgreSQL and a Web3 tool for Ethereum wallet tracking.`,
   ],
-  profile_pic: "src/assets/profile.png",
+  profile_pic: `${baseurl}/profile.png`,
   name: "Binh Nguyen",
   role: ["Full Stack Developer"],
   socials: {
     github: "https://github.com/binhnguyen63",
     linkedin: "https://www.linkedin.com/in/binh-nguyen-244608196/",
   },
+  resume: `${baseurl}/binh_nguyen_resume.pdf`,
   latest_work: [
     {
       title: "User Management Project",
@@ -28,7 +30,7 @@ const ProjectData = {
         `PostgreSQL`,
         `Flask`,
       ],
-      image: "${process.env.PUBLIC_URL}/user_management_project.png",
+      image: `${baseurl}/user_management_project.png`,
       github: "https://github.com/binhnguyen63/SoftwareDesign-Project",
     },
     {
@@ -42,7 +44,7 @@ managing user-submitted data`,
         `Created SQL scripts for constraints, foreign keys, and data integrity checks.`,
       ],
       tools_used: [`PostgreSQL`, `nodejs`, `HTML`, `CSS`],
-      image: "${process.env.PUBLIC_URL}/restaurant.png",
+      image: `${baseurl}/restaurant.png`,
       github: "https://github.com/Minhbui100/Restaurant",
     },
     {
@@ -53,7 +55,7 @@ managing user-submitted data`,
         `Provide clear description of the transaction in the discord message`,
       ],
       tools_used: [`NodeJs`, `EtherscanAPI`],
-      image: "${process.env.PUBLIC_URL}/web3.png",
+      image: `${baseurl}/web3.png`,
       github: "https://github.com/binhnguyen63/wallet-track",
     },
     {
@@ -65,7 +67,7 @@ managing user-submitted data`,
         `Improved user interaction with AI through contextual responses`,
       ],
       tools_used: [`Python`, `Discord API`, `ChatCPT API`],
-      image: "${process.env.PUBLIC_URL}/discord-bot.png",
+      image: `${baseurl}/discord-bot.png`,
       github: "https://github.com/binhnguyen63/chatGBT-discord-bot",
     },
   ],
