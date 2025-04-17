@@ -20,10 +20,10 @@ const Home = () => {
           </div>
           <div className="socials">
             <a href={ProjectData.socials.github} target="_blank">
-              <img id="github" src="src/assets/github-mark.svg"></img>
+              <img id="github" src="/github-mark.svg"></img>
             </a>
             <a href={ProjectData.socials.linkedin} target="_blank">
-              <img id="linkedin" src="src/assets/LI-In-Bug.png"></img>
+              <img id="linkedin" src="/LI-In-Bug.png"></img>
             </a>
           </div>
         </div>

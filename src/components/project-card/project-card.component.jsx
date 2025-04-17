@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
         )}
         {project.github && (
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <img id="github" src="src/assets/github-mark.svg"></img>
+            <img id="github" src="/github-mark.svg"></img>
           </a>
         )}
       </div>
