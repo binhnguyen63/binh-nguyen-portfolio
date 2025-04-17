@@ -45,7 +45,7 @@ managing user-submitted data`,
       ],
       tools_used: [`PostgreSQL`, `nodejs`, `HTML`, `CSS`],
       image: `${baseurl}/restaurant.png`,
-      github: "https://github.com/Minhbui100/Restaurant",
+      github: "https://github.com/binhnguyen63/Restaurant",
     },
     {
       title: "Web3 - ETH wallet tracking",
