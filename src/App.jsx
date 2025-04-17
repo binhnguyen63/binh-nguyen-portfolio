@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
@@ -7,17 +7,14 @@ import "./App.css";
 
 function App() {
   return (
-    // <div>
-    //   <Router>
-    //     <Routes>
-    //       <Route path="/" element={<Navigation />}>
-    //         <Route index element={<Home />} />
-    //         <Route path="projects" element={<Project />} />
-    //       </Route>
-    //     </Routes>
-    //   </Router>
-    // </div>
-    <div>hi</div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Project />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
