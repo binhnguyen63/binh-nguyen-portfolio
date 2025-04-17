@@ -28,7 +28,7 @@ const ProjectData = {
         `PostgreSQL`,
         `Flask`,
       ],
-      image: "/user_management_project.png",
+      image: "${process.env.PUBLIC_URL}/user_management_project.png",
       github: "https://github.com/binhnguyen63/SoftwareDesign-Project",
     },
     {
