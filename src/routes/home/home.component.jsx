@@ -13,11 +13,11 @@ const Home = () => {
         ></img>
         <div className="introduction-text">
           <h1>Welcome,</h1>
-          <p className="description">
-            {ProjectData.description.map((des) => {
-              return <p>{des}</p>;
+          <div className="description">
+            {ProjectData.description.map((des, index) => {
+              return <p key={index}>{des}</p>;
             })}
-          </p>
+          </div>
           <div className="socials">
             <a href={ProjectData.socials.github} target="_blank">
               <img id="github" src="src/assets/github-mark.svg"></img>
@@ -28,22 +28,26 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div class="latest-work-section">
-        <h2 class="section-title">SOME OF MY LATEST WORK</h2>
-        <div class="card-container">
-          {ProjectData.latest_work.map((project, index) => (
-            <div class="card">
-              <img
-                className="ProjectData-image"
-                src={project.image}
-                alt="UI design book"
-              />
-              <div class="card-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
+      <div className="latest-work-section">
+        <h2 className="section-title">SOME OF MY LATEST WORK</h2>
+        <div className="card-container">
+          {ProjectData.latest_work.map((project, index) => {
+            if (index <= 2) {
+              return (
+                <div className="card" key={index}>
+                  <img
+                    className="ProjectData-image"
+                    src={project.image}
+                    alt="UI design book"
+                  />
+                  <div className="card-content">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </div>

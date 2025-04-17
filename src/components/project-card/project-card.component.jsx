@@ -8,7 +8,29 @@ const ProjectCard = ({ project }) => {
       </div>
       <div>
         <h2 className="project-title">{project.title}</h2>
-        <p className="project-description">{project.description}</p>
+        {project.detailed_description && (
+          <div className="project-description">
+            {project.detailed_description.map((des, i) => (
+              <p key={i}>{des}</p>
+            ))}
+          </div>
+        )}
+        {project.tools_used && (
+          <p className="project-tools">
+            <strong>Tools Used: </strong>
+            {project.tools_used.map((tool, i) => (
+              <span className="tool" key={i}>
+                {tool}
+                {i !== project.tools_used.length - 1 ? ", " : ""}
+              </span>
+            ))}
+          </p>
+        )}
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <img id="github" src="src/assets/github-mark.svg"></img>
+          </a>
+        )}
       </div>
     </div>
   );

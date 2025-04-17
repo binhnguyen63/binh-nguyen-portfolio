@@ -6,9 +6,19 @@
   gap: 3rem;
   width: 100%;
   padding: 3rem;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .project-image {
   width: 20rem;
   height: 15rem;
+}
+
+.github-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
 }

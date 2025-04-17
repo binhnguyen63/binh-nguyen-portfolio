@@ -3,10 +3,13 @@ import "./navigation-top-bar.style.css";
 import { Link } from "react-router-dom";
 
 const NavigationTopBar = () => {
+  const openResume = () => {
+    window.open("public/binh_nguyen_resume.pdf", "_blank");
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" href="#">
+        <Link className="navbar-brand" to={"/"}>
           Binh's Portfolio
         </Link>
         <button
@@ -34,9 +37,9 @@ const NavigationTopBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <button className="nav-link" onClick={openResume}>
                 Resume
-              </a>
+              </button>
             </li>
           </ul>
         </div>
