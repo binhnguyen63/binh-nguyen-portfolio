@@ -2,11 +2,11 @@ import ProjectData from "../../data/project-data";
 import "./contact-welcome.style.css";
 import { sendMessage } from "../../utils/firebase/firebase.utils";
 const ContactWelcome = () => {
-  const sendMessageHandler = async (message, email, name) => {
-    message = document.getElementById("message").value;
-    email = document.getElementById("email").value;
-    name = document.getElementById("name").value;
-    const msgStatus = sendMessage(message, email, name);
+  const sendMessageHandler = async () => {
+    const message = document.getElementById("message");
+    const email = document.getElementById("email");
+    const name = document.getElementById("name");
+    const msgStatus = sendMessage(message.value, email.value, name.value);
     if (msgStatus) {
       document.querySelector(".success-msg").classList.remove("hidden");
       message.value = "";
