@@ -1,10 +1,14 @@
 body {
   font-family: "Montserrat", sans-serif !important;
-  background-image: url("src/assets/Abstract White Vectors & Illustrations for Free Download _ Freepik.jpeg");
+  background-image: url("/Abstract White Vectors & Illustrations for Free Download _ Freepik.jpeg");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }

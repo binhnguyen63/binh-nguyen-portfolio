@@ -1,0 +1,85 @@
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.email-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto; /* 3 rows (height auto) */ /* 2 equal columns */
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+  align-items: stretch;
+}
+.message-container {
+  grid-column: 2; /* Second column */
+  grid-row: 1 / span 2; /* Spans both rows */
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  flex: 1; /* Optional: stops manual resizing if you want a clean look */
+}
+#message,
+#email,
+#name {
+  border-radius: 5px;
+  border: 1px solid rgb(118, 118, 118);
+  padding: 1rem;
+  width: 100%;
+}
+
+#email,
+#name {
+  height: 48px;
+}
+
+.submit-msg {
+  grid-column: 2;
+  width: 50%;
+  justify-self: end;
+
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 2.5rem;
+}
+.submit-msg:hover {
+  background-color: #444;
+}
+
+.success-msg {
+  color: green;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: #ebf9dd;
+  border: #bce68a 1px solid;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}

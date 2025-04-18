@@ -28,9 +28,13 @@ const NavigationTopBar = () => {
           {/* Add ms-auto here to push nav items to the right */}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/contact"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/projects">
