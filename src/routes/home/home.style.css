@@ -3,10 +3,16 @@
   height: 13rem;
   border-radius: 50%;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 h1 {
   font-size: 5rem;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
 }
 
 .home {
@@ -22,10 +28,10 @@ h1 {
 .introduction {
   display: flex;
   align-items: center;
-  text-align: center;
-  width: 60vw;
+  width: 100%;
   gap: 5rem;
-  margin-top: 5rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
 }
 
 .introduction-text {
@@ -33,16 +39,23 @@ h1 {
   text-align: left;
   display: flex;
   flex-direction: column;
-}
-
-.description {
-  text-align: left;
+  h1 {
+    font-size: 102px;
+  }
 }
 
 .socials {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.socials img {
+  transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
 }
 
 #github,
@@ -56,8 +69,6 @@ h1 {
 
 .section-title {
   display: flex;
-  align-items: center;
-  text-align: center;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -75,7 +86,6 @@ h1 {
 
 .latest-work-section {
   text-align: center;
-  padding: 2rem;
 }
 
 .latest-work-section h2 {
@@ -88,19 +98,21 @@ h1 {
 
 .card-container {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  gap: 2rem; /* Adjust the gap between items */
 }
 
 .card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 315px;
   overflow: hidden;
   text-align: left;
   transition: transform 0.2s;
+  flex: 1 1 200px;
+  max-width: 300px;
+  min-width: 250px;
 }
 
 .card:hover {

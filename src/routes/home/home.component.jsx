@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const baseurl = import.meta.env.BASE_URL;
   return (
-    <div className="home">
+    <div className="container-body">
       <div className="introduction">
         <img
           src={ProjectData.profile_pic}

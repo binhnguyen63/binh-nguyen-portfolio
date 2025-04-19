@@ -16,7 +16,7 @@ const ContactWelcome = () => {
   };
 
   return (
-    <div className="container">
+    <div>
       <div className="contact-welcome">
         <img id="profile-pic" src={ProjectData.profile_pic}></img>
         <div className="contact-text">
