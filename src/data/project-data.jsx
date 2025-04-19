@@ -8,9 +8,11 @@ const ProjectData = {
   profile_pic: `${baseurl}/profile.png`,
   name: "Binh Nguyen",
   role: ["Full Stack Developer"],
+  email: "binhnguyen4344@gmail.com",
   socials: {
     github: "https://github.com/binhnguyen63",
     linkedin: "https://www.linkedin.com/in/binh-nguyen-244608196/",
+    leetcode: "https://leetcode.com/u/binhnguyen4344/",
   },
   resume: `${baseurl}/binh_nguyen_resume.pdf`,
   latest_work: [
