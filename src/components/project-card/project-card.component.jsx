@@ -1,8 +1,10 @@
 import "./project-card.style.css";
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
   const baseurl = import.meta.env.BASE_URL;
+  const isEven = index % 2 === 0;
+
   return (
-    <div className="project-card">
+    <div className={`project-card ${isEven ? "left-img" : "right-img"}`}>
       <div className="project-img">
         <img className="project-image" src={project.image} alt="Project" />
       </div>
@@ -28,7 +30,7 @@ const ProjectCard = ({ project }) => {
         )}
         {project.github && (
           <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <img id="github" src={`${baseurl}/github-mark.svg`}></img>
+            <img id="github" src={`${baseurl}/github-mark.svg`} />
           </a>
         )}
       </div>

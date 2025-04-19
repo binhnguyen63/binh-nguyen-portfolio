@@ -22,7 +22,8 @@ const Project = () => {
         {ProjectData.latest_work.map((project, index) => (
           <ProjectCard
             project={project}
-            key={index} // optional
+            key={index}
+            index={index} // optional
           />
         ))}
       </div>

@@ -7,7 +7,7 @@
   width: 100%;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 2.5rem;
+  padding-bottom: 4rem;
 }
 
 .project-image {
@@ -21,4 +21,12 @@
   padding: 0.5rem 1rem;
   border: none;
   text-decoration: none;
+}
+
+.left-img {
+  flex-direction: row;
+}
+
+.right-img {
+  flex-direction: row-reverse;
 }
