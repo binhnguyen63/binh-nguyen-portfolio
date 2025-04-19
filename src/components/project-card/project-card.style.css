@@ -36,3 +36,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+.project-description,
+.project-tools {
+  color: #333333;
+}

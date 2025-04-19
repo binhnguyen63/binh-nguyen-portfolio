@@ -3,7 +3,7 @@
   width: 100vw;
   color: #333;
   font-size: 14px;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer-content {
@@ -50,6 +50,14 @@
 
 .footer-column a:hover {
   color: #0077cc;
+}
+
+.browse,
+.follow-me,
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* Responsive behavior */
