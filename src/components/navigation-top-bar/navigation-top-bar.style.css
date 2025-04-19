@@ -1,5 +1,41 @@
 .navbar {
   height: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Dark background */
+  color: #ffffff;
+  background-color: transparent;
+  max-width: 1000px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item .nav-link:hover {
+  color: #00bcd4; /* Accent color on hover */
+  transition: color 0.3s ease;
 }

@@ -8,46 +8,29 @@ const NavigationTopBar = () => {
     window.open(ProjectData.resume, "_blank");
   };
   return (
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to={"/"}>
-          Binh's Portfolio
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Add ms-auto here to push nav items to the right */}
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projects">
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <button className="nav-link" onClick={openResume}>
-                Resume
-              </button>
-            </li>
-          </ul>
-        </div>
+    <nav className="navbar">
+      <Link className="navbar-brand" to={"/"}>
+        Binh's Portfolio
+      </Link>
+      <div>
+        {/* Add ms-auto here to push nav items to the right */}
+        <ul>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/contact">
+              Contact
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/projects">
+              Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link" onClick={openResume}>
+              Resume
+            </button>
+          </li>
+        </ul>
       </div>
     </nav>
   );
