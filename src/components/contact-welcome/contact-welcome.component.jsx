@@ -20,7 +20,7 @@ const ContactWelcome = () => {
       <div className="contact-welcome">
         <img id="profile-pic" src={ProjectData.profile_pic}></img>
         <div className="contact-text">
-          <h1>contact.</h1>
+          <h1>Contact.</h1>
           <h5>Get in touch with me via social media or send me an email</h5>
           <div className="socials">
             <a href={ProjectData.socials.github} target="_blank">
