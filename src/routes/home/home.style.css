@@ -42,6 +42,7 @@ h1 {
   h1 {
     font-size: 102px;
   }
+  gap: 1rem;
 }
 
 .socials {
