@@ -34,8 +34,11 @@ const Home = () => {
         <div className="card-container">
           {ProjectData.latest_work.map((project, index) => {
             if (index <= 2) {
+              const handleCardClick = () => {
+                window.open(project.github, "_blank");
+              };
               return (
-                <div className="card" key={index}>
+                <div className="card" key={index} onClick={handleCardClick}>
                   <img
                     className="ProjectData-image"
                     src={project.image}
