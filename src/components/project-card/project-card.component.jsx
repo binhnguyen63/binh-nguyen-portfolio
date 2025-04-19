@@ -8,7 +8,7 @@ const ProjectCard = ({ project, index }) => {
       <div className="project-img">
         <img className="project-image" src={project.image} alt="Project" />
       </div>
-      <div>
+      <div className="project-content">
         <h2 className="project-title">{project.title}</h2>
         {project.detailed_description && (
           <div className="project-description">

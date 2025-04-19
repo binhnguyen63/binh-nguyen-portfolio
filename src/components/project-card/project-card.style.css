@@ -30,3 +30,9 @@
 .right-img {
   flex-direction: row-reverse;
 }
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
