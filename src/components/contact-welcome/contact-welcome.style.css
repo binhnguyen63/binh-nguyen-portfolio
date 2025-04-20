@@ -110,3 +110,10 @@
   text-align: center;
   margin-top: 2rem;
 }
+.github-icon,
+.linkedin-icon,
+.leetcode-icon,
+.email-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}

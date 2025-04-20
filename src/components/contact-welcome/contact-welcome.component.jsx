@@ -25,15 +25,28 @@ const ContactWelcome = () => {
           <div className="socials">
             <a href={ProjectData.socials.github} target="_blank">
               <img
-                id="github"
+                id="github-icon"
                 src={`${import.meta.env.BASE_URL}/github-mark.svg`}
               ></img>
             </a>
             <a href={ProjectData.socials.linkedin} target="_blank">
               <img
-                id="linkedin"
+                id="linkedin-icon"
                 src={`${import.meta.env.BASE_URL}/LI-In-Bug.png`}
               ></img>
+            </a>
+            <a href={ProjectData.socials.leetcode} target="_blank">
+              <img
+                id="leetcode-icon"
+                src={`${import.meta.env.BASE_URL}/leetcode.png`}
+              ></img>
+            </a>
+            <a href={`mailto:${ProjectData.socials.email}`}>
+              <img
+                id="email-icon"
+                src={`${import.meta.env.BASE_URL}/email.png`}
+                alt="Email icon"
+              />
             </a>
           </div>
         </div>

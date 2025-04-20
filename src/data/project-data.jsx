@@ -13,6 +13,7 @@ const ProjectData = {
     github: "https://github.com/binhnguyen63",
     linkedin: "https://www.linkedin.com/in/binh-nguyen-244608196/",
     leetcode: "https://leetcode.com/u/binhnguyen4344/",
+    email: "binhnguyen4344@gmail.com",
   },
   resume: `${baseurl}/binh_nguyen_resume.pdf`,
   latest_work: [
