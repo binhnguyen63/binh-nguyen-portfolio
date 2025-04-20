@@ -8,7 +8,7 @@ const Project = () => {
     <div className="container-body">
       <div className="project-header fade-in fade-in-delay-1">
         <div className="project-header-text">
-          <h2>Project.</h2>
+          <h2>Projects.</h2>
           <h5>SOME OF MY LATEST WORK</h5>
         </div>
 
