@@ -1,5 +1,6 @@
 import "./home.style.css";
 import ProjectData from "../../data/project-data";
+import TechStack from "../../components/experience/experience.component";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -28,6 +29,10 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="experience-section">
+        <h2>My Experience</h2>
+        <TechStack />
       </div>
       <div className="latest-work-section">
         <h2 className="section-title">SOME OF MY LATEST WORK</h2>

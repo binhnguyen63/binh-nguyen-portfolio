@@ -2,8 +2,8 @@ const baseurl = import.meta.env.BASE_URL;
 const ProjectData = {
   title: "Binh Nguyen Portfolio Website",
   description: [
-    `My name is Binh Nguyen, I’m passionate about building tech solutions that make life easier. I enjoy working on real-world projects—from full-stack web apps to automation tools—and love learning new technologies.`,
-    `I’ve worked with Python, JavaScript, React, Node.js, PostgreSQL, and more, including projects like a user management site using Microsoft Graph API, restaurant management using PostgreSQL and a Web3 tool for Ethereum wallet tracking.`,
+    `My name is Binh Nguyen, I'm a senior student at University Of Houston. I’m passionate about building tech solutions that make life easier. I enjoy working on real-world projects—from full-stack web apps to automation tools—and love learning new technologies.`,
+    `I’ve worked with Python, JavaScript, React, C++, Java, PostgreSQL, and more, including projects like a user management site using Microsoft Graph API, restaurant management using PostgreSQL and a Web3 tool for Ethereum wallet tracking.`,
   ],
   profile_pic: `${baseurl}/profile.png`,
   name: "Binh Nguyen",

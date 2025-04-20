@@ -1,0 +1,40 @@
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tech-section {
+  flex: 1 1 300px; /* 👈 allows them to shrink but not too much */
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  gap: 2rem;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%; /* 👈 fills the parent section */
+  gap: 2rem;
+}
+
+.tech-item {
+  display: flex;
+  gap: 8px;
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+.tech-section > h3 {
+  font-weight: bold;
+  color: black;
+}
