@@ -7,7 +7,7 @@ const Home = () => {
   const baseurl = import.meta.env.BASE_URL;
   return (
     <div className="container-body">
-      <div className="introduction">
+      <div className="introduction fade-in fade-in-delay-1">
         <img
           src={ProjectData.profile_pic}
           id="profile-pic"
@@ -30,11 +30,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="experience-section">
+      <div className="experience-section fade-in fade-in-delay-2">
         <h2>My Experience</h2>
         <TechStack />
       </div>
-      <div className="latest-work-section">
+      <div className="latest-work-section fade-in fade-in-delay-3">
         <h2 className="section-title">SOME OF MY LATEST WORK</h2>
         <div className="card-container">
           {ProjectData.latest_work.map((project, index) => {
