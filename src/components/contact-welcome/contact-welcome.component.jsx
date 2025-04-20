@@ -17,7 +17,7 @@ const ContactWelcome = () => {
 
   return (
     <div>
-      <div className="contact-welcome">
+      <div className="contact-welcome fade-in fade-in-delay-1">
         <img id="profile-pic" src={ProjectData.profile_pic}></img>
         <div className="contact-text">
           <h1>Contact.</h1>
@@ -38,7 +38,7 @@ const ContactWelcome = () => {
           </div>
         </div>
       </div>
-      <div className="email-me">
+      <div className="email-me fade-in fade-in-delay-2">
         <h3>Send me an email</h3>
         <form className="email-form">
           <div id="name-container">
