@@ -33,7 +33,7 @@ const ProjectCard = ({ project, index }) => {
           )}
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer">
-              <img id="github" src={`${baseurl}/github-mark.svg`} />
+              <img id="github-icon" src={`${baseurl}/github-mark.svg`} />
             </a>
           )}
         </div>

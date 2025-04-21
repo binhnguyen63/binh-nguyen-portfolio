@@ -54,7 +54,7 @@ managing user-submitted data`,
       title: "Web3 - ETH wallet tracking",
       description: "Track ETH wallet transactions.",
       detailed_description: [
-        `Track user’s ETH wallets and send new activities to discord channel.`,
+        `Track multiple user’s ETH wallets and send new activities to discord channel. Alerts users important important transactions.`,
         `Provide clear description of the transaction in the discord message`,
       ],
       tools_used: [`NodeJs`, `EtherscanAPI`],
