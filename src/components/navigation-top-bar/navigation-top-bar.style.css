@@ -1,6 +1,6 @@
 .navbar {
   height: 5rem;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
   /* Dark background */
   color: #ffffff;
   background-color: transparent;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .navbar-brand {
