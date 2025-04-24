@@ -46,7 +46,7 @@ const ProjectData = {
         `PostgreSQL`,
         `Flask`,
       ],
-      image: `${baseurl}/user_management_project.png`,
+      image: [`${baseurl}/user_management_project.png`],
       github: "https://github.com/binhnguyen63/SoftwareDesign-Project",
     },
     {
@@ -57,7 +57,7 @@ const ProjectData = {
         `Provide clear description of the transaction in the discord message`,
       ],
       tools_used: [`NodeJs`, `EtherscanAPI`],
-      image: `${baseurl}/web3.png`,
+      image: [`${baseurl}/web3.png`],
       github: "https://github.com/binhnguyen63/wallet-track",
     },
     {
