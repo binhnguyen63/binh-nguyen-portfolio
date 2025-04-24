@@ -1,14 +1,62 @@
+import { useState } from "react";
 import "./project-card.style.css";
+
 const ProjectCard = ({ project, index }) => {
   const baseurl = import.meta.env.BASE_URL;
   const isEven = index % 2 === 0;
+
+  const [currentImgIndex, setCurrentImgIndex] = useState(0);
+  const images = Array.isArray(project.image) ? project.image : [project.image];
+
+  const handleNext = () => {
+    setCurrentImgIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const nextImgIndex = (currentImgIndex + 1) % images.length;
 
   return (
     <div className="project-card-wrapper">
       <div className={`project-card ${isEven ? "left-img" : "right-img"}`}>
         <div className="project-img">
-          <img className="project-image" src={project.image} alt="Project" />
+          <img
+            className="project-image"
+            src={images[currentImgIndex]}
+            alt={`Project image ${currentImgIndex + 1}`}
+          />
+
+          {images.length > 1 && (
+            <>
+              <div className="img-navigation">
+                <button onClick={handlePrev} className="img-nav-button">
+                  <img
+                    src={`${
+                      import.meta.env.BASE_URL
+                    }/public/previous-svgrepo-com.svg`}
+                  ></img>
+                </button>
+                <div className="img-preview-container">
+                  <img
+                    className="img-preview"
+                    src={images[nextImgIndex]}
+                    alt={`Preview ${nextImgIndex + 1}`}
+                  />
+                </div>
+                <button onClick={handleNext} className="img-nav-button">
+                  <img
+                    src={`${
+                      import.meta.env.BASE_URL
+                    }/public/next-svgrepo-com.svg`}
+                  ></img>
+                </button>
+              </div>
+            </>
+          )}
         </div>
+
         <div className="project-content">
           <h2 className="project-title fade-in fade-in-delay-1">
             {project.title}
@@ -41,4 +89,5 @@ const ProjectCard = ({ project, index }) => {
     </div>
   );
 };
+
 export default ProjectCard;

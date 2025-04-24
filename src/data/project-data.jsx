@@ -18,6 +18,19 @@ const ProjectData = {
   resume: `${baseurl}/binh_nguyen_resume.pdf`,
   latest_work: [
     {
+      title: "Restaurant Management System",
+      description: "A project to manage a restaurant.",
+      detailed_description: [
+        `Curated a database design for a restaurant chain that required 10 interrelated tables.`,
+        `Customers can order food, and the restaurant can manage orders, employees, and inventory.`,
+        `Structured 10 interrelated tables to enforce 3NF and BCNF`,
+        `Created SQL scripts for constraints, foreign keys, and data integrity checks.`,
+      ],
+      tools_used: [`PostgreSQL`, `nodejs`, `HTML`, `CSS`],
+      image: [`${baseurl}/restaurant.png`, `${baseurl}/restaurant2.png`],
+      github: "https://github.com/binhnguyen63/Restaurant",
+    },
+    {
       title: "User Management Project",
       description: "A project to manage users in a system.",
       detailed_description: [
@@ -35,20 +48,6 @@ const ProjectData = {
       ],
       image: `${baseurl}/user_management_project.png`,
       github: "https://github.com/binhnguyen63/SoftwareDesign-Project",
-    },
-    {
-      title: "Restaurant Management System",
-      description: "A project to manage a restaurant.",
-      detailed_description: [
-        `Curated a database design for a restaurant chain that required 10 interrelated tables.`,
-        `The project included
-managing user-submitted data`,
-        `Structured 10 interrelated tables to enforce 3NF and BCNF`,
-        `Created SQL scripts for constraints, foreign keys, and data integrity checks.`,
-      ],
-      tools_used: [`PostgreSQL`, `nodejs`, `HTML`, `CSS`],
-      image: `${baseurl}/restaurant.png`,
-      github: "https://github.com/binhnguyen63/Restaurant",
     },
     {
       title: "Web3 - ETH wallet tracking",

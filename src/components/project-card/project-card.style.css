@@ -15,7 +15,6 @@
 
 .project-image {
   width: 20rem;
-  height: 15rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -92,4 +91,47 @@
 
 .fade-in-delay-2 {
   animation-delay: 0.4s;
+}
+.img-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.img-nav-button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.img-preview-indicator {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.img-preview-container {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.img-preview-label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #888;
+}
+
+.img-preview {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
 }
