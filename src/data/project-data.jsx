@@ -69,7 +69,7 @@ const ProjectData = {
         `Improved user interaction with AI through contextual responses`,
       ],
       tools_used: [`Python`, `Discord API`, `ChatCPT API`],
-      image: `${baseurl}/discord-bot.png`,
+      image: [`${baseurl}/discord-bot.png`],
       github: "https://github.com/binhnguyen63/chatGBT-discord-bot",
     },
   ],
