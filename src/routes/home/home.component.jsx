@@ -65,7 +65,7 @@ const Home = () => {
                 <div className="card" key={index} onClick={handleCardClick}>
                   <img
                     className="ProjectData-image"
-                    src={project.image}
+                    src={project.image[0]}
                     alt="UI design book"
                   />
                   <div className="card-content">
