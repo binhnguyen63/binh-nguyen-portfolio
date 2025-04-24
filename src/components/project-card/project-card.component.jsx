@@ -32,11 +32,7 @@ const ProjectCard = ({ project, index }) => {
             <>
               <div className="img-navigation">
                 <button onClick={handlePrev} className="img-nav-button">
-                  <img
-                    src={`${
-                      import.meta.env.BASE_URL
-                    }/public/previous-svgrepo-com.svg`}
-                  ></img>
+                  <img src={`${baseurl}/previous-svgrepo-com.svg`}></img>
                 </button>
                 <div className="img-preview-container">
                   <img
@@ -46,11 +42,7 @@ const ProjectCard = ({ project, index }) => {
                   />
                 </div>
                 <button onClick={handleNext} className="img-nav-button">
-                  <img
-                    src={`${
-                      import.meta.env.BASE_URL
-                    }/public/next-svgrepo-com.svg`}
-                  ></img>
+                  <img src={`${baseurl}/next-svgrepo-com.svg`}></img>
                 </button>
               </div>
             </>
