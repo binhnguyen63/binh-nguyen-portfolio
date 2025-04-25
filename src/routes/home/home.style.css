@@ -166,3 +166,8 @@ h1 {
   flex-direction: column;
   gap: 1rem;
 }
+
+.ProjectData-image {
+  object-fit: cover;
+  object-position: top;
+}
