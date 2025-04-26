@@ -18,6 +18,16 @@ const ProjectData = {
   resume: `${baseurl}/binh_nguyen_resume.pdf`,
   latest_work: [
     {
+      title: "Binh Nguyen Portfolio Website",
+      description: "A project to manage a restaurant.",
+      detailed_description: [
+        `Designed a responsive webpage to display my projects, skills, and information about myself`,
+      ],
+      tools_used: [`React`, `nodejs`, `HTML`, `CSS`, "Google FireStore"],
+      image: [`${baseurl}/binhnguyen63.github.io_binh-nguyen-portfolio_.png`],
+      github: "https://github.com/binhnguyen63/binh-nguyen-portfolio",
+    },
+    {
       title: "Restaurant Management System",
       description: "A project to manage a restaurant.",
       detailed_description: [
