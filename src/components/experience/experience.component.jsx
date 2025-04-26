@@ -38,7 +38,7 @@ const TechStack = () => {
     { name: "Java", level: "Intermediate" },
     { name: "PhP", level: "Intermediate" },
     { name: "Node.JS", level: "Intermediate" },
-    { name: "Snowflake", level: "Learning" },
+    { name: "Flask/Django", level: "Learning" },
   ];
 
   return (
