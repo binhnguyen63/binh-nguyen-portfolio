@@ -24,7 +24,10 @@ const ProjectData = {
         `Designed a responsive webpage to display my projects, skills, and information about myself`,
       ],
       tools_used: [`React`, `nodejs`, `HTML`, `CSS`, "Google FireStore"],
-      image: [`${baseurl}/binhnguyen63.github.io_binh-nguyen-portfolio_.png`],
+      image: [
+        `${baseurl}/binhnguyen63.github.io_binh-nguyen-portfolio_.png`,
+        `${baseurl}/binhnguyen63.github.io_binh-nguyen-portfolio_contact.png`,
+      ],
       github: "https://github.com/binhnguyen63/binh-nguyen-portfolio",
     },
     {

@@ -57,7 +57,12 @@ const Home = () => {
         <h2 className="section-title">SOME OF MY LATEST WORK</h2>
         <div className="card-container">
           {ProjectData.latest_work.map((project, index) => {
-            if (index <= 2) {
+            const chosen_project = [
+              "Restaurant Management System",
+              "User Management Project",
+              "Web3 - ETH wallet tracking",
+            ];
+            if (chosen_project.includes(project.title)) {
               const handleCardClick = () => {
                 window.open(project.github, "_blank");
               };
