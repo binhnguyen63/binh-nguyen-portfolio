@@ -50,32 +50,45 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className="project-content">
-          <h2 className="project-title fade-in fade-in-delay-1">
-            {project.title}
-          </h2>
-          {project.detailed_description && (
-            <div className="project-description">
-              {project.detailed_description.map((des, i) => (
-                <p key={i}>{des}</p>
-              ))}
-            </div>
-          )}
-          {project.tools_used && (
-            <p className="project-tools">
-              <strong>Tools Used: </strong>
-              {project.tools_used.map((tool, i) => (
-                <span className="tool" key={i}>
-                  {tool}
-                  {i !== project.tools_used.length - 1 ? ", " : ""}
-                </span>
-              ))}
-            </p>
-          )}
-          {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-              <img id="github-icon" src={`${baseurl}/github-mark.svg`} />
-            </a>
-          )}
+          <div>
+            <h2 className="project-title fade-in fade-in-delay-1">
+              {project.title}
+            </h2>
+            {project.detailed_description && (
+              <div className="project-description">
+                {project.detailed_description.map((des, i) => (
+                  <p key={i}>{des}</p>
+                ))}
+              </div>
+            )}
+            {project.tools_used && (
+              <p className="project-tools">
+                <strong>Tools Used: </strong>
+                {project.tools_used.map((tool, i) => (
+                  <span className="tool" key={i}>
+                    {tool}
+                    {i !== project.tools_used.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </p>
+            )}
+          </div>
+          <div className={`project-link-container ${isEven ? `right` : ""}`}>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img id="github-icon" src={`${baseurl}/github-mark.svg`} />
+              </a>
+            )}
+            {project.url && (
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <img id="github-icon" src={`${baseurl}/world-wide-web.png`} />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

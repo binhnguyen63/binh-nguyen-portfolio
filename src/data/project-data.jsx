@@ -3,7 +3,7 @@ const ProjectData = {
   title: "Binh Nguyen Portfolio Website",
   description: [
     `My name is Binh Nguyen, I'm a senior computer science student at University Of Houston. I’m passionate about building tech solutions that make life easier. I enjoy working on real-world projects—from full-stack web apps to automation tools—and love learning new technologies.`,
-    `I’ve worked with Python, JavaScript, React, C++, Java, PostgreSQL, and more, including projects like a user management site using Microsoft Graph API, restaurant management using PostgreSQL and a Web3 tool for Ethereum wallet tracking.`,
+    `I’ve worked with Python, JavaScript, React, Next.js, C++, Java, PostgreSQL, and more, including projects like a user management site using Microsoft Graph API, restaurant management using PostgreSQL and a Web3 tool for Ethereum wallet tracking.`,
   ],
   profile_pic: `${baseurl}/profile.png`,
   name: "Binh Nguyen",
@@ -29,6 +29,7 @@ const ProjectData = {
         `${baseurl}/binhnguyen63.github.io_binh-nguyen-portfolio_contact.png`,
       ],
       github: "https://github.com/binhnguyen63/binh-nguyen-portfolio",
+      url: "https://binhnguyen63.github.io/binh-nguyen-portfolio/",
     },
     {
       title: "Restaurant Management System",
@@ -40,8 +41,27 @@ const ProjectData = {
         `Created SQL scripts for constraints, foreign keys, and data integrity checks.`,
       ],
       tools_used: [`PostgreSQL`, `nodejs`, `HTML`, `CSS`],
-      image: [`${baseurl}/restaurant.png`, `${baseurl}/restaurant2.png`],
+      image: [`${baseurl}/restaurant2.png`, `${baseurl}/restaurant.png`],
       github: "https://github.com/binhnguyen63/Restaurant",
+    },
+    {
+      title: "Insightify",
+      description: "A project to manage users in a system.",
+      detailed_description: [
+        `A website that integrated AI technology to enhance shopping experience`,
+        `Utilized Google AI Studio, Google Custom Search API`,
+      ],
+      tools_used: [
+        `NodeJS`,
+        `Next.js`,
+        `React`,
+        `Google AI Studio`,
+        `Google Custom Search API`,
+        `Vercel`,
+      ],
+      image: [`${baseurl}/Insightify.png`],
+      github: "https://github.com/binhnguyen63/insightify",
+      url: "https://insightify-beta.vercel.app/",
     },
     {
       title: "User Management Project",

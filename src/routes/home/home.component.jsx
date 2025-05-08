@@ -59,23 +59,48 @@ const Home = () => {
           {ProjectData.latest_work.map((project, index) => {
             const chosen_project = [
               "Restaurant Management System",
-              "User Management Project",
+              "Insightify",
               "Web3 - ETH wallet tracking",
             ];
             if (chosen_project.includes(project.title)) {
-              const handleCardClick = () => {
-                window.open(project.github, "_blank");
-              };
               return (
-                <div className="card" key={index} onClick={handleCardClick}>
-                  <img
-                    className="ProjectData-image"
-                    src={project.image[0]}
-                    alt="UI design book"
-                  />
-                  <div className="card-content">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
+                <div className="card" key={index}>
+                  <div>
+                    <img
+                      className="ProjectData-image"
+                      src={project.image[0]}
+                      alt="UI design book"
+                    />
+                    <div className="card-content">
+                      <h3>{project.title}</h3>
+                      <p>{project.description}</p>
+                    </div>
+                  </div>
+                  <div className="card-link">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          id="github-icon"
+                          src={`${baseurl}/github-mark.svg`}
+                        />
+                      </a>
+                    )}
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          id="github-icon"
+                          src={`${baseurl}/world-wide-web.png`}
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               );
